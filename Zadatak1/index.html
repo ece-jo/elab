@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="shortcut icon" href="img/favikon.jpg" type="image/jpg">
+    <title>Moj rokovnik</title>
+</head>
+<body>
+    <div id="omotac">
+        <header id="myHeader">
+            <ul>
+                <li class="meni"><a href="#tekst" style="color: rgb(64, 73, 71);">O nama</a></li>
+                <li class="meni"><a href="#grid-container" style="color: rgb(64, 73, 71);">Akcija</a></li>
+                <li class="meni"><a href="#album" style="color: rgb(64, 73, 71);">Galerija</a></li>
+                <li class="meni"><a href="#kontakt" style="color: rgb(64, 73, 71);">Kontakt</a></li>
+            </ul>
+        </header>
+        <a name="tekst" ></a>
+        <div id="tekst">
+            
+            <h1>Kome je namenjen Moj rokovnik?</h1>
+            <p>
+            Svima koji bi voleli da bolje organizuju svoje vreme:
+            Bez obzira da li idete u školu, studirate, radite ili zbog porodičnih obaveza često 
+            imate osećaj da ne stižete da uradite sve što ste naumili, ovo je rokovnik za Vas.<br>
+            Uz mesečni i nedeljni planer i liste obaveza, lakše ćete organizovati svoje vreme, a struktura 
+            rokovnika je takva da ćete ga lako prilagoditi sopstvenim potrebama.
+            <br>
+            Svima kojima je potreban podsticaj da svoje planove sprovedu u delo:
+            Svi poznajemo ljude koji imaju odlične ideje, ali nikako ne uspevaju da istraju i svoje snove pretvore u javu. Ovaj rokov
+            nik pruža priliku da sve ideje zapišemo na jednom mestu, napravimo plan i pridržavamo ga se sve dok ne stignemo do cilja.
+            <br>
+            Svima koji vole da zapisuju sve što im je važno:
+            Sa dovoljno praznih strana za pisanje, Moj rokovnik Vam omogućava da zapiše
+            te uspomene, omiljene recepte, citate iz knjiga i sve drugo što Vam je važno na isto
+            m mestu gde zapisujete i dnevne obaveze.<a name="grid-container"></a></p> </div>
+            
+        <div class="grid-container">
+            <div class="item1">Jesenja akcija</div>
+            <div class="item2">Popust<br>20%</div>
+            <div class="item3">Klasik planer</div>  
+            <div class="item4">Studentski planer</div>
+            <div class="item5">1500RSD</div>
+          </div>
+
+          <a name="album"></a>
+          <div class="album">
+            <div class="slika1" style="background-image: url('img/CetvrtaSlika.webp') ;" id="drugaStrana"><span class="text">Školski planer <br>Pogodan za školu i vannastavne aktivnosti</span></div>
+            <div class="slika2" style="background-image: url('img/PetaSlika.webp');" id="drugaStrana"><span class="text">Stabilo olovke <br> Ukrasite svoj rokovnik</span> </div>
+            <div class="slika3" style="background-image: url('img/pocetnaSlika.jpg');" id="drugaStrana"><span class="text">Organizacija <br> Sve je u dobroj organizaciji</span></div>
+            <div class="slika4" style="background-image: url('img/pocetnaSlika1.jpg');" id="drugaStrana"><span class="text"> Klasik planer <br> Neka Vam svakodnevne obaveze postanu lagane</span></div>
+           
+        </div>
+        <a name="kontakt" ></a>
+        <div class="kontakt">
+            <div class="deo1">Kontaktirajte nas ako želite da iskoristite AKCIJU</div>
+            <div class="deo2"></div>
+            <div class="deo3">
+                <form id="forma">
+                    <input type="text" placeholder="Ime i prezime*" class="kontaktPodaci" id="ime">
+                    <input type="text" placeholder="Telefon*" class="kontaktPodaci" id="telefon">
+                    <input type="text" placeholder="E-mail*" class="kontaktPodaci" id="email">
+                </form>
+                <form id="formaKomentar">
+                    <textarea placeholder="Komentar*" id="komentar"></textarea>
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Nisam robot</label>
+                    <label id="greska">Niste čekirali!</label>
+                </form>
+            </div>
+            <div class="deo4"></div>
+            <div class="deo5"> <div id="formaDugme">
+                <input type="button" value="Posalji" id="Posalji" onclick="validacija()">
+            </div></div>
+        </div>
+    </div>
+    <script src="js/script4.js"></script>
+</body>
+</html>

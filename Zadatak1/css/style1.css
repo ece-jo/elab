@@ -1,0 +1,233 @@
+*{ 
+	font-family: Lato;
+}
+
+header{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(255, 205, 248);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+/*******Meni******/
+ul{
+    list-style: none;
+    margin: 0 auto;
+    color: sienna;
+    display: flex;
+    justify-content: center;
+}
+
+.meni{
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: large;
+    /*background: wheat;*/
+}
+
+.meni:hover{
+    background-color: wheat;
+}
+/******Prvi deo******/
+#tekst{
+    margin: 6vw 10vw;
+    border: wheat;
+    border-radius: 20px;
+    border-style: dotted;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/******Drugi deo*******/
+
+.slika1{ 
+    grid-area: slika1;
+    background-size: cover;
+}
+
+.slika2{ 
+    grid-area: slika2;
+    background-size: cover;
+}
+
+.slika3{ 
+    grid-area: slika3;
+    background-size: cover;}
+.slika4{ 
+    grid-area: slika4;
+    background-size: cover;}
+
+
+.album{
+    margin-top: 20px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+      'slika1 slika2'
+      'slika3 slika4';
+    grid-gap: 10px;
+    background-color: wheat;
+    padding: 20px;
+}
+
+.album > div{
+    /* height: 200px; */
+    width: 35vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    margin: -2px;
+    padding-top: 56.25%;
+    filter: grayscale(0%);
+	transition: .3s ease-in-out;
+
+}
+
+.album > div:hover{
+    filter: grayscale(80%);
+	transition: .3s ease-in-out;
+
+}
+
+.album > #drugaStrana .text{
+    position: absolute;		
+	transform: translate(-50%, -90%);
+	z-index: 0;
+    opacity: 0;
+    transition: all 0.8s ease;	
+}
+
+.album > #drugaStrana:hover .text{
+    opacity: 1;
+}
+
+span.text{
+    width: 100%;
+}
+
+/*******Treci deo********/
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    margin-top: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: #f0597f;
+    padding: 10px;
+    
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.493);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    
+}
+/********Forma*********/
+.deo1 { grid-area: naslov; }
+.deo2 { grid-area: levo; }
+.deo3 { grid-area: forma; }
+.deo4 { grid-area: desno; }
+.deo5 { grid-area: dole; 
+    align-items: center;}
+
+.kontakt {
+    margin-top: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-areas:
+      'naslov naslov naslov'
+      ' levo  forma desno'
+      'dole dole dole';
+    grid-gap: 10px;
+    background-color: #f0597f;
+    padding: 10px;
+    
+}
+
+.kontakt > div {
+    background-color: rgba(255, 255, 255, 0.493);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.kontaktPodaci {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#komentar{
+    width: 100%;
+    height: 100px;
+}
+
+#Posalji{
+    
+    
+    margin-right: 45%;
+    margin-left: 45%;
+    cursor: pointer;
+}
+
+#checkbox{
+    margin-left: 2%;
+}
+
+#greska{
+    color: red;
+    display: none;
+}
+
+#celaForma {
+    align-items: center;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+ /***********Responzivnost***********/
+
+ @media screen and (max-width: 600px) {
+  
+      .meni {
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 8pt;
+        margin-right: 30px;
+      }
+      .grid-container>div{
+        font-size: 15pt;
+      
+       }
+    
+     .album>div{
+        font-size: 8pt;
+    }
+    #tekst{
+        margin-top: 100px;
+    }
+
+
+}
